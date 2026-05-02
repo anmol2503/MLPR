@@ -158,7 +158,7 @@ Key notebooks:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/LordHarsh/MLPR.git
+git clone https://github.com/anmol2503/MLPR.git
 cd MLPR
 ```
 
