@@ -14,7 +14,7 @@ paneer = gr.Checkbox("Paneer?")
 day = gr.Radio(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], label="Day of the Week")
 guest = gr.Checkbox("Guest?")
 test = gr.Checkbox("Test?")
-max_possible_footfall = gr.Slider(50, 500, value=335, label="How many people on campus?")
+max_possible_footfall = gr.Slider(50, 2000, value=335, label="How many people on campus?")
 meal_type = gr.Radio(["Breakfast", "Lunch", "Dinner"])
 
 # Preprocessing logic
@@ -65,7 +65,7 @@ interface = Interface(
     fn=predict_footfall,
     inputs=[bogo, paneer, day, guest, test, max_possible_footfall, meal_type],
     outputs=predicted_footfall,
-    title="Plaksha University Footfall Prediction"
+    title="Cafeteria Footfall Predictor"
 )
 
 interface.launch(share=True)

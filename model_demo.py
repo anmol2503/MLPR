@@ -174,9 +174,9 @@ def predict(bogo, paneer, day, guest, test, max_possible_footfall, meal_type):
 
 
 # ── UI ────────────────────────────────────────────────────────────────────────
-with gr.Blocks(title="Plaksha Cafeteria Footfall Predictor") as interface:
+with gr.Blocks(title="Cafeteria Footfall Predictor") as interface:
 
-    gr.Markdown("# Plaksha University — Cafeteria Footfall Predictor")
+    gr.Markdown("# Cafeteria Footfall Predictor")
     gr.Markdown("Forecast dining-hall attendance using a Poisson regression model trained on historical data.")
 
     with gr.Row():
